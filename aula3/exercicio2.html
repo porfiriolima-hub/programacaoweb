@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência Bancário</title>
+</head>
+<body>
+  <header>
+    <h1>Escolha a aplicação</h1>
+  </header>
+  <main>
+    <form action="saldo.php" method="post">
+      <fieldset>
+        <legend>Valor da Aplicação</legend>
+          <label for="aplicacao">Valor à aplicar</label>
+          <input type="number" name="valorAplicacao" id="idvalor">
+      </fieldset>
+      <fieldset>
+        <legend>Nossas aplicações</legend>
+          <select name="aplic" id="idaplic">
+            <option value="1">Poupança</option>
+            <option value="2">Fundos de renda fixa</option>
+
+          </select> <br>
+          
+          <input type="submit" value="Enviar">
+
+      </fieldset>
+
+    </form>
+    
+  </main>
+  
+</body>
+</html>
