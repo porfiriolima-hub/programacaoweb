@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculo de Salário</title>
+</head>
+<body>
+  <header><h1>Culcule o salário final de seu Funcionário</h1></header>
+  <main>
+    <form action="salarFunc.php" method="post">
+      <fieldset>
+        <legend>Nome do Funcionário</legend>
+          <label for="nome">Funcionário</label><br>
+          <input type="text" name="nome" id="idnome">        
+      </fieldset>
+      <fieldset>
+        <legend>Salário fixo</legend>
+          <label for="salarioF">Salário Fixo</label><br>
+          <input type="number"  name="salarioF" step="0.01" id="idsalarioF">      
+      </fieldset>
+      <fieldset>
+        <legend>Valor das vendas</legend>
+          <label for="vendas">Valor total de vendas</label><br>
+          <input type="number" name="vendas" step="0.01" id="idvendas">
+      </fieldset>
+      <fieldset>
+        <legend>Enviar</legend>
+          <input type="submit" value="Enviar">
+      </fieldset>
+    </form>
+
+  </main>
+  
+</body>
+</html>
