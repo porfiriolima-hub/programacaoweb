@@ -1,7 +1,7 @@
 <?php 
-$nome = $_REQUEST["nome"];
-$vendas = $_REQUEST["vendas"];
-$salarioF = $_REQUEST["salarioF"];
+$nome = $_REQUEST['nome'];
+$vendas = $_REQUEST['vendas'];
+$salarioF = $_REQUEST['salarioF'];
 
 $comiss = $vendas * 0.04;
 $salarioT = $comiss + $salarioF;
