@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frases</title>
+</head>
+<body>
+  <h1>Enviar 3 Frases</h1>
+  <p class="hint">Preencha as três frases e clique em <strong>Gravar</strong> para salvar no arquivo <code>frases.txt</code>.</p>
+
+  <!-- Envia como um array: frases[]  -->
+  <form action="gravarFrases.php" method="post" autocomplete="on">
+    <div class="campo">
+      <label for="frase1">Frase 1</label>
+      <input type="text" id="frase1" name="frases[]" placeholder="Digite a primeira frase" required />
+    </div>
+
+    <div class="campo">
+      <label for="frase2">Frase 2</label>
+      <input type="text" id="frase2" name="frases[]" placeholder="Digite a segunda frase" required />
+    </div>
+
+    <div class="campo">
+      <label for="frase3">Frase 3</label>
+      <input type="text" id="frase3" name="frases[]" placeholder="Digite a terceira frase" required />
+    </div>
+
+    <div class="acoes">
+      <button type="submit">Gravar</button>
+      <button type="reset">Limpar</button>
+      
+    </div>
+  </form>
+  
+</body>
+</html>
